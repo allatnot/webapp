@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Post{% endblock %}
+{% block header %}<h1>This is the post section</h1> {% endblock %}
+{% block nav %}
+	<a href="{{ url_for('home') }}">Home</a>
+	<a href="{{ url_for('about') }}">About</a>
+{% endblock %}
+
+{% block content %}
+	<h3 id="post_title">How to make a web app</h3>
+	<p id="post_content">There are many frameworks available for desigining a web app. Flask is one of them and here in this 
+    app we have used Flask framework for python to design this web app. To make a web. To make a web app using Flask frame
+		work we need a python and Flask library installed on our machnie.
+	</p>
+{% endblock %}
